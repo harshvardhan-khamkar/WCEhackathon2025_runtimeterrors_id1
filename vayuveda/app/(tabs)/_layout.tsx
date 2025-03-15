@@ -14,21 +14,9 @@ export default function TabLayout() {
           elevation: 8,
         },
       }}>
+      {/* Map Screen */}
       <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ focused }) => (
-            <FontAwesome
-              name="home"
-              size={24}
-              color={focused ? "#2E7D32" : "#757575"}
-            />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="map"
+        name="map" // Name of the map screen
         options={{
           title: 'Map',
           tabBarIcon: ({ focused }) => (
@@ -40,8 +28,10 @@ export default function TabLayout() {
           ),
         }}
       />
+
+      {/* Stats Screen */}
       <Tabs.Screen
-        name="stats"
+        name="stats" // Name of the stats screen
         options={{
           title: 'Stats',
           tabBarIcon: ({ focused }) => (
